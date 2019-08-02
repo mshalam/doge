@@ -42,7 +42,7 @@ export class UserHome extends Component {
           <img src="/Dogecoin_logo.png" height="40%" width="40%" />
         </div>
         <div id="textInfo">
-          <h2>Price : {this.state.price.toFixed(7)}</h2>
+          <h2>Price : ${this.state.price.toFixed(7)}</h2>
           <h2>Inflation Rate: {inflation.toFixed(2)}%</h2>
           <h2>
             Market Cap: ${this.state.marketCap
