@@ -13,17 +13,21 @@ export class UserHome extends Component {
   }
 
   async componentDidMount() {
-    let result = await axios.get('/api/doge')
-    let data = result.data.data.DOGE
+    try {
+      let result = await axios.get('/api/doge')
+      let data = result.data.data.DOGE
 
-    console.log('state: ', data)
-    //console.log('state: ', )
+      console.log('state: ', data)
+      //console.log('state: ', )
 
-    this.setState({
-      circulation: data.circulating_supply,
-      price: data.quote.USD.price,
-      marketCap: data.quote.USD.market_cap
-    })
+      this.setState({
+        circulation: data.circulating_supply,
+        price: data.quote.USD.price,
+        marketCap: data.quote.USD.market_cap
+      })
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   render() {
