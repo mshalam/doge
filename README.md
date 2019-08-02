@@ -2,4 +2,4 @@
 
 Tracks price, Inflation rate, and Market Cap of Dogecoin
 
-*WOW, MUCH INFORMATION, VERY SCIENCE *
+*WOW, MUCH INFORMATION, VERY SCIENCE*
